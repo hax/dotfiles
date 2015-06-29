@@ -52,5 +52,6 @@
 
     # Extra
 
-    #no-proto: 0
-    #no-constant-condition: 1
+    no-labels: 1
+    no-proto: 1
+    no-constant-condition: 1
