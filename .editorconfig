@@ -82,7 +82,7 @@ indent_size = 4
 # insert_final_newline may introduce a extra newline. In typical cases, we
 # include some html fragments, and normally there are html end tags as
 # boundary, so extra whitespaces are not significant for final effect.
-# In case of whitespaces are signicant, you should not rely on unsound
+# In case of whitespaces are significant, you should not rely on unsound
 # include/require, but use the precise output methods like `echo`.
 #
 # The worst case is whitespaces being treat as normal content, for example
