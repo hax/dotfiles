@@ -55,7 +55,7 @@ indent_size = 4
 ; indent_style = tab
 
 
-[*.{php,phpt,phtml,hh,hphp,php3,php4,php5,php7,inc,html,htm,shtml}]
+[*.{php,phpt,phtml,hh,hphp,php3,php4,php5,php7,inc,shtml,wtfext_for_php}]
 # There are some misunderstandings that insert_final_newline can cause unwanted
 # output effects in PHP scripts therefore should be disabled.
 #
@@ -85,15 +85,17 @@ indent_size = 4
 # In case of whitespaces are significant, you should not rely on unsound
 # include/require, but use the precise output methods like `echo`.
 #
-# The worst case is whitespaces being treat as normal content, for example
+# The worst case is trailing whitespaces being treat as normal content, aka
 # space or multiple newlines after the PHP closing tag. It's very easy to be
 # neglected and if cause problem it's very hard to discover. That's a design
 # flaw of PHP from its first day, though far from serious to PHP standards :)
 #
-# As I said in previous paragraphs, insert_final_newline has no relation with
-# this problem, but use trim_trailing_whitespace could prevent the former.
+# As I noted earlier, insert_final_newline has no relation with this case,
+# but use trim_trailing_whitespace could prevent the former (trailing space).
 # Some editors (eg. Atom) support a stricter form of insert_final_newline,
-# ensure the file end with exactly one newline -- this can prevent latter.
+# ensure the file end with ONEE (one and only one) newline, such feature can
+# prevent latter (multiple newlines)... Yes, EditorConfig is awesome, but not
+# awesome enough to save PHP :P
 #
 ; insert_final_newline = true
 ; trim_trailing_whitespace = true
