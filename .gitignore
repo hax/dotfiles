@@ -1,9 +1,17 @@
 # node.js
-node_modules
+node_modules/
 npm-debug.log
 
 # bower
-bower_components
+bower_components/
 
 # IDE
-.idea
+.idea/
+
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
