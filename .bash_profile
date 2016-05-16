@@ -1,8 +1,11 @@
-export PATH=~/.composer/vendor/bin:$PATH
-
 NVM_DIR=/usr/local/nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" && nvm use stable # This loads nvm
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
+export TNVM_DIR="/Users/hax/.tnvm"
+[ -s "$TNVM_DIR/tnvm.sh" ] && . "$TNVM_DIR/tnvm.sh"  # This loads nvm
+
+export PATH=~/.composer/vendor/bin:$PATH
 
 if [ -f /usr/local/share/liquidprompt ]; then
     . /usr/local/share/liquidprompt
@@ -33,5 +36,3 @@ alias dn='node --harmony --expose-gc --trace_opt --trace_deopt --allow-natives-s
 alias chd='"/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" --allow-file-access-from-files --js-flags="--allow-natives-syntax"'
 alias chc='"/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" --js-flags="--allow-natives-syntax --expose-gc --trace_opt --trace_deopt"'
 
-export TNVM_DIR="/Users/hax/.tnvm"
-[ -s "$TNVM_DIR/tnvm.sh" ] && . "$TNVM_DIR/tnvm.sh"  # This loads nvm
