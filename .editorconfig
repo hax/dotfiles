@@ -72,7 +72,7 @@ indent_size = 4
 # already end with newline.
 #
 # But if a file ends with normal content (everything outside of a pair of
-# opening and closing tags), add included/required by other PHP files,
+# opening and closing tags), and included/required by other PHP files,
 # insert_final_newline may introduce a extra newline. In typical cases, we
 # include some html fragments, and normally there are html end tags as
 # boundary, so extra whitespaces are not significant for final effect.
@@ -80,7 +80,7 @@ indent_size = 4
 # include/require, but use the precise output methods like `echo`.
 #
 # The worst case is trailing whitespaces being treat as normal content, aka
-# space or multiple newlines after the PHP closing tag. It's very easy to be
+# spaces or multiple newlines after the PHP closing tag. It's very easy to be
 # neglected and if cause problem it's very hard to discover. That's a design
 # flaw of PHP from its first day, though far from serious to PHP standards :)
 #
