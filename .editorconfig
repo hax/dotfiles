@@ -98,3 +98,6 @@ indent_size = 4
 #
 ; insert_final_newline = single
 ; trim_trailing_whitespace = true
+
+
+# THE END
