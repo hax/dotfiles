@@ -17,8 +17,8 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-# Some properties may not supported by all editors/plugins
-max_line_length = 120
+# See https://github.com/editorconfig/editorconfig/issues/280
+max_line_length = 80
 
 
 [package.json]
