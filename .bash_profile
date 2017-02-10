@@ -36,3 +36,4 @@ alias dn='node --harmony --expose-gc --trace_opt --trace_deopt --allow-natives-s
 alias chd='"/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" --allow-file-access-from-files --js-flags="--allow-natives-syntax"'
 alias chc='"/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" --js-flags="--allow-natives-syntax --expose-gc --trace_opt --trace_deopt"'
 
+alias hss='http-server -c-1 --cors -S -C ~/localhost-ecc.pem -K ~/localhost-ecc.pem'
