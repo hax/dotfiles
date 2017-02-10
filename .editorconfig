@@ -34,12 +34,6 @@ indent_style = space
 indent_size = 2
 
 
-# Deprecated .eslintrc may be in YAML format
-[.eslintrc]
-indent_style = space
-indent_size = 2
-
-
 [*.{markdown,md}]
 # Trailing whitespaces is part of the syntax of old-style Markdown, Jesus!
 # But GFM is not follow that syntax. And some editors such as Atom always trim
