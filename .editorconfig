@@ -14,8 +14,12 @@ indent_style = tab
 
 # Unix-style newlines with a newline ending every file
 end_of_line = lf
-insert_final_newline = true
+
+# Trim trailing whitespaces
 trim_trailing_whitespace = true
+
+# See https://github.com/editorconfig/editorconfig/issues/269
+insert_final_newline = single
 
 # See https://github.com/editorconfig/editorconfig/issues/280
 max_line_length = 80
@@ -89,7 +93,8 @@ indent_size = 4
 # Some editors (eg. Atom) support a stricter form of insert_final_newline,
 # ensure the file end with ONEE (one and only one) newline, such feature can
 # prevent latter (multiple newlines)... Yes, EditorConfig is awesome, but not
-# awesome enough to save PHP :P
+# awesome enough to save PHP :P  -- But there is a proposal,
+# see https://github.com/editorconfig/editorconfig/issues/269
 #
-; insert_final_newline = true
+; insert_final_newline = single
 ; trim_trailing_whitespace = true
