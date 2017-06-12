@@ -19,6 +19,7 @@ end_of_line = lf
 trim_trailing_whitespace = true
 
 # See https://github.com/editorconfig/editorconfig/issues/269
+insert_final_newline = true
 insert_final_newline = single
 
 # See https://github.com/editorconfig/editorconfig/issues/280
