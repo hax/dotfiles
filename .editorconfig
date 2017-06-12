@@ -42,9 +42,10 @@ indent_size = 2
 [*.{markdown,md}]
 # Trailing whitespaces is part of the syntax of old-style Markdown, Jesus!
 # But GFM is not follow that syntax. And some editors such as Atom always trim
-# trailing whitespaces.
-# So please use `<br>` instead of illegible trailing spaces if you really want
-# one hard line break.
+# trailing whitespaces as default settings.
+# CommonMark spec introduce backslash `\` for hard line breaks, and it should
+# be used instead of illegible trailing spaces. You could also use `<br>` for
+# old-style Markdown.
 ; trim_trailing_whitespace = true
 
 # Markdown treat 4 spaces like 1 tab
