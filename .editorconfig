@@ -26,9 +26,10 @@ max_line_length = 80
 
 
 [package.json]
-# To be consistent with the output of npm cli, surrender to evil SPACEs
-indent_style = space
-indent_size = 2
+# The output of old npm cli always surrender to evil SPACEs,
+# but npm 5 come to rescue.
+;indent_style = space
+;indent_size = 2
 # Anyway, JSON is too evil that even SPACEs can not add more!
 
 
