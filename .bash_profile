@@ -20,6 +20,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias npmls='npm ls --depth=0'
+alias npml='npm ls --depth=0 -g'
 #alias cnpm="npm --registry=https://registry.npm.taobao.org \
 #--cache=$HOME/.npm/.cache/cnpm \
 #--disturl=https://npm.taobao.org/dist \
