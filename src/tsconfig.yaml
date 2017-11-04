@@ -1,0 +1,127 @@
+compilerOptions:
+
+  ## strict type check
+
+  strict: true
+    # noImplicitAny: true
+    # noImplicitThis: true
+    # alwaysStrict: true
+    # strictNullChecks: true
+    # strictFunctionTypes: true
+  # suppressImplicitAnyIndexErrors: false
+  # noStrictGenericChecks: false
+
+
+  ## lint
+
+  noImplicitReturns: true
+  noUnusedLocals: true
+  noUnusedParameters: true
+  noFallthroughCasesInSwitch: true
+  # suppressExcessPropertyErrors: false
+  # allowUnreachableCode: false
+  # allowUnusedLabels: false
+  # allowSyntheticDefaultImports: false
+  forceConsistentCasingInFileNames: true
+
+
+  ## lib
+
+  # skipLibCheck: false
+  # noLib: false
+  lib: [esnext]
+  # types: []
+  # typeRoots: []
+
+
+  ## module resolution
+
+  # baseUrl:
+  # paths: {}
+  # moduleResolution: classic
+  # traceResolution: false
+
+
+  ## compile
+
+  isolatedModules: true
+
+
+  ## compile js
+
+  # allowJs: false
+  checkJs: true
+  # maxNodeModuleJsDepth: 0
+  # disableSizeLimit: false
+
+
+  ## emit
+
+  # noEmit: false
+  # noEmitOnError: false
+
+
+  ## out structure
+
+  # outDir:
+  # outFile:
+  # rootDir:
+  # rootDirs: []
+  preserveSymlinks: true
+
+
+  ## encoding
+
+  # charset: utf-8
+  # emitBOM: false
+  # newLine: lf
+
+
+  ## generate .d.ts
+
+  declaration: true
+  # declarationDir:
+  # stripInternal: false
+
+
+  ## generate sourcemap
+
+  sourceMap: true
+  # inlineSourceMap: false
+  inlineSources: true
+  # mapRoot:
+  # sourceRoot:
+
+
+  ## emit js
+
+  target: es2017
+  module: es2015
+  # noResolve: false
+  noImplicitUseStrict: true
+  importHelpers: true
+  # noEmitHelpers: false
+  # preserveConstEnums: false
+  # removeComments: false
+
+
+  ## compatibility
+
+  downlevelIteration: true
+  # experimentalDecorators: false
+  # emitDecoratorMetadata: false
+
+
+  ## emit jsx and react
+
+  # jsx: preserve
+  # jsxFactory: React.createElement
+
+
+  ## debug
+
+  pretty: true
+  # locale: en
+  # diagnostics: false
+  # listFiles: false
+  # listEmittedFiles: false

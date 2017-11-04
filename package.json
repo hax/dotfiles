@@ -1,0 +1,22 @@
+{
+	"private": true,
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "Hax's dotfiles",
+  "scripts": {
+    "prepublish": "build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hax/dotfiles.git"
+  },
+  "author": "HE Shi-Jun <johnhax@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hax/dotfiles/issues"
+  },
+  "homepage": "https://github.com/hax/dotfiles#readme",
+  "devDependencies": {
+    "js-yaml": "^3.10.0"
+  }
+}
