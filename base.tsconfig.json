@@ -2,7 +2,7 @@
 {
 	"compilerOptions": {
 		"strict": true,
-		"noImplicitReturns": true,
+		"noImplicitReturns": false,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
@@ -10,15 +10,12 @@
 		"lib": [
 			"esnext"
 		],
-		"isolatedModules": true,
-		"checkJs": true,
 		"preserveSymlinks": true,
 		"declaration": true,
 		"sourceMap": true,
 		"inlineSources": true,
 		"target": "es2017",
 		"module": "es2015",
-		"noImplicitUseStrict": true,
 		"importHelpers": true,
 		"downlevelIteration": true,
 		"pretty": true
