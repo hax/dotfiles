@@ -94,7 +94,7 @@ compilerOptions:
   module: es2015
   # noResolve: false
   # noImplicitUseStrict: false
-  importHelpers: true
+  # importHelpers: false
   # noEmitHelpers: false
   # preserveConstEnums: false
   # removeComments: false

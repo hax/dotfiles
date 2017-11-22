@@ -16,7 +16,6 @@
 		"inlineSources": true,
 		"target": "es2017",
 		"module": "es2015",
-		"importHelpers": true,
 		"downlevelIteration": true,
 		"pretty": true
 	}
