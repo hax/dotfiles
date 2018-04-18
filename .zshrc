@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx brew colored-man-pages nvm npm node)
+plugins=(git osx brew colored-man-pages npm node)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,12 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="/usr/local/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-# [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
-
-export TNVM_DIR="/Users/hax/.tnvm"
-[ -s "$TNVM_DIR/tnvm.sh" ] && . "$TNVM_DIR/tnvm.sh"  # This loads nvm
+# export TNVM_DIR="/Users/hax/.tnvm"
+# [ -s "$TNVM_DIR/tnvm.sh" ] && . "$TNVM_DIR/tnvm.sh"
 
 export PATH=~/.composer/vendor/bin:$PATH
 
