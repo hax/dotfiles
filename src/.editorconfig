@@ -18,9 +18,11 @@ end_of_line = lf
 # Trim trailing whitespaces
 trim_trailing_whitespace = true
 
-# See https://github.com/editorconfig/editorconfig/issues/269
+# Always end with newline
 insert_final_newline = true
-insert_final_newline = single
+
+# See https://github.com/editorconfig/editorconfig/issues/269
+trim_trailing_newlines = true
 
 # See https://github.com/editorconfig/editorconfig/issues/280
 max_line_length = 80
