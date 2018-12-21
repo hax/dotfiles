@@ -34,3 +34,7 @@ alias chd='"/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome 
 alias chc='"/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" --js-flags="--allow-natives-syntax --expose-gc --trace_opt --trace_deopt"'
 
 alias hss='http-server -c-1 --cors -S -C ~/localhost-ecc.pem -K ~/localhost-ecc.pem'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/hax/.sdkman"
+[[ -s "/Users/hax/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/hax/.sdkman/bin/sdkman-init.sh"
