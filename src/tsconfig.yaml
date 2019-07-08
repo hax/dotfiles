@@ -1,9 +1,13 @@
-# https://www.typescriptlang.org/docs/handbook/compiler-options.html
+## https://www.typescriptlang.org/docs/handbook/compiler-options.html
 compilerOptions:
 
   ## projects structure
 
+  # project: null
+  # build: false
   composite: true
+  # incremental: true
+  # tsBuildInfoFile: '.tsbuildinfo'
   # outDir:
   # outFile:
   # rootDir:
@@ -111,6 +115,7 @@ compilerOptions:
   # esModuleInterop: false
     # allowSyntheticDefaultImports: false
   # isolatedModules: false
+  # allowUmdGlobalAccess: false
   # experimentalDecorators: false
   # emitDecoratorMetadata: false
   # keyofStringsOnly: false
@@ -133,3 +138,4 @@ compilerOptions:
   # listEmittedFiles: false
   # noErrorTruncation: false
   # preserveWatchOutput: false
+  # showConfig: false
