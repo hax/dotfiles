@@ -89,6 +89,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=~/.composer/vendor/bin:$PATH
 
+export PATH=~/.npm-global/bin:$PATH
+
 alias nodem="node --experimental-modules --harmony"
 alias npml="npm ls -g --depth=0"
 alias npmL="npm ls --depth=0"
