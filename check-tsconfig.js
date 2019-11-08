@@ -1,3 +1,5 @@
+'use strict'
+
 const {readFile} = require('fs').promises
 const fetch = require('node-fetch')
 
@@ -59,26 +61,56 @@ function createElement(m) {
 async function compilerOptions() {
 	const options = []
 
-	const doc = await fetch('https://www.typescriptlang.org/docs/handbook/compiler-options.html')
-	const text = await doc.text()
 	const tr = new NaiveElementMatcher('tr')
 	const td = new NaiveElementMatcher('td')
 	const code = new NaiveElementMatcher('code')
+	const em = new NaiveElementMatcher('em')
 
-	for (const row of tr.matchAll(text)) {
+	const doc = await fetch('https://www.typescriptlang.org/docs/handbook/compiler-options.html')
+	for (const row of tr.matchAll(await doc.text())) {
 		const cells = [...td.matchAll(row.innerHTML)]
 		if (!cells.length) continue
-		const option = code.match(cells[0].innerHTML)
-		const type = code.match(cells[1].innerHTML)
-		const defaultValue = code.match(cells[2].innerHTML)
+		const _option = code.match(cells[0].innerHTML)
+		if (!_option) throw new Error()
+		const option = _option.innerHTML.replace(/^--/, '')
+		const _type = code.match(cells[1].innerHTML)
+		const cli = !_type
+		const type = _type && _type.innerHTML
+		const _defaultValue = code.match(cells[2].innerHTML)
+		const defaultValue = _defaultValue && _defaultValue.innerHTML
 		const description = cells[3].innerHTML
 		const deprecated = description.includes('DEPRECATED')
-		if (type && !deprecated) options.push({
-			option: option.innerHTML.replace(/^--/, ''),
-			type: type.innerHTML,
-			defaultValue: defaultValue && defaultValue.innerHTML,
+		options.push({
+			option,
+			type,
+			defaultValue,
 			description,
+			deprecated,
+			cli,
 		})
+	}
+	const docb = await fetch('https://www.typescriptlang.org/docs/handbook/compiler-options-in-msbuild.html')
+	for (const row of tr.matchAll(await docb.text())) {
+		const cells = [...td.matchAll(row.innerHTML)]
+		if (!cells.length) continue
+		const _option = code.match(cells[0].innerHTML)
+		if (!_option) continue
+		const option = _option && _option.innerHTML.replace(/^--/, '')
+		const _notSupported = em.match(cells[1].innerHTML)
+		const notSupported = _notSupported && _notSupported.innerHTML === 'Not supported in MSBuild'
+		const type = cells[2].innerHTML
+
+		if (notSupported && type.trim() !== '') console.warn(`${option} ${notSupported.innerHTML} "${type}"`)
+
+		const exist = options.find(({option: o}) => option === o)
+		if (!exist) {
+			options.push({option, type, msbuild: true})
+			continue
+		}
+
+		if (notSupported) continue
+		if (exist.type === 'string' || exist.type === 'string[]') continue
+		if (exist.type !== type) console.warn(`${option} type mismatch: ${exist.type} / ${type} (msbuild)`)
 	}
 
 	return options
@@ -98,7 +130,7 @@ async function baseOptions() {
 
 void async function main() {
 
-	const doc = await compilerOptions()
+	const doc = (await compilerOptions()).filter(o => !o.deprecated && !o.cli)
 	const base = await baseOptions()
 	const init = await initOptions()
 
