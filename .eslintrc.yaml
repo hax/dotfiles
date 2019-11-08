@@ -2,12 +2,13 @@
   extends: eslint:recommended
 
   env:
-    es6: true
+    es2020: true
 
-  ecmaFeatures:
-    modules: true
+  parserOptions:
+    # ecmaVersion: 2020
+    sourceType: module
 
-  parser: babel-eslint
+  # parser: babel-eslint
 
 
   rules:
@@ -32,7 +33,7 @@
     no-eval: 2
     no-empty-label: 2
     no-floating-decimal: 2
-    
+
 
     # Strict Mode
 
@@ -76,3 +77,6 @@
 
     no-proto: 1
     no-constant-condition: 1
+
+    no-multiple-empty-lines: 2
+    indent: [2, tab]
