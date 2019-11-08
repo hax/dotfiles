@@ -97,7 +97,7 @@ alias npmL="npm ls --depth=0"
 alias hss='http-server -c-1 --cors -S -C ~/localhost-self-signed-cert.pem -K ~/localhost-self-signed-cert.pem'
 alias chd='"/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" --allow-file-access-from-files --js-flags="--allow-natives-syntax --harmony-tailcalls --harmony-explicit-tailcalls"'
 
-alias hp="https_proxy=http://127.0.0.1:8123"
+alias hp="https_proxy=http://127.0.0.1:1087"
 
 alias du='du -ch'
 
