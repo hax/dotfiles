@@ -139,3 +139,4 @@ compilerOptions:
   # noErrorTruncation: false
   # preserveWatchOutput: false
   # showConfig: false
+  # generateCpuProfile: 'profile.cpuprofile'
