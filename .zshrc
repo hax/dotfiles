@@ -95,7 +95,7 @@ alias nodem="node --experimental-modules --harmony"
 alias npml="npm ls -g --depth=0"
 alias npmL="npm ls --depth=0"
 alias hss='http-server -c-1 --cors -S -C ~/localhost-self-signed-cert.pem -K ~/localhost-self-signed-cert.pem'
-alias chd='"/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" --allow-file-access-from-files --js-flags="--allow-natives-syntax --harmony-tailcalls --harmony-explicit-tailcalls"'
+alias chd='"/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" --allow-file-access-from-files --js-flags="--allow-natives-syntax --harmony-top-level-await --harmony-explicit-tailcalls"'
 
 alias hp="https_proxy=http://127.0.0.1:1087"
 
