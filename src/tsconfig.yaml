@@ -98,7 +98,7 @@ compilerOptions:
 
   ## emit js
 
-  target: es2017
+  target: es2020
   module: es2015
   # noResolve: false
   # noImplicitUseStrict: false
@@ -112,6 +112,7 @@ compilerOptions:
   ## compatibility
 
   downlevelIteration: true
+  # useDefineForClassFields: false
   # esModuleInterop: false
     # allowSyntheticDefaultImports: false
   # isolatedModules: false
