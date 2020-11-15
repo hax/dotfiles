@@ -17,10 +17,9 @@
 	},
 	"homepage": "https://github.com/hax/dotfiles#readme",
 	"devDependencies": {
-		"eslint": "^5.10.0",
-		"js-yaml": "^3.12.0",
-		"node-fetch": "^2.3.0",
-		"typescript": "^3.2.2"
+		"eslint": "^7.1.0",
+		"js-yaml": "^3.14.0",
+		"node-fetch": "^2.6.0"
 	},
 	"dependencies": {}
 }
