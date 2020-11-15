@@ -9,8 +9,12 @@ root = true
 charset = utf-8
 
 # Finally TABs win the war!
-# Do not specify indent_size/tab_width here, because TAB is not SPACE :)
 indent_style = tab
+
+# Ideally we should not specify indent_size/tab_width here, because TAB is not
+# SPACE, but saddly GitHub use tab-size 8 as default which make reading code
+# hard, so let's use 3 as default
+indent_size = 3
 
 # Unix-style newlines with a newline ending every file
 end_of_line = lf
