@@ -1,0 +1,27 @@
+// See https://github.com/hax/dotfiles/tree/master/src/tsconfig-base.json for full edition
+{
+	"compilerOptions": {
+		"composite": true,
+		"target": "ESNext",
+		"lib": [
+			"ESNext"
+		],
+		"module": "ES2020",
+		"moduleResolution": "Bundler",
+		"allowArbitraryExtensions": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		"downlevelIteration": true,
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		"allowSyntheticDefaultImports": false,
+		"esModuleInterop": false,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"skipLibCheck": true
+	}
+}
